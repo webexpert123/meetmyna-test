@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Myna</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jkj0jua.css" />
+  <script>(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');</script>
+<script async src='https://r.wdfl.co/rw.js' data-rewardful='86f660'></script>
+</head>
+  <body>
+    <!-- header  -->
+    <header class="py-4 fixed w-full top-0 bg-white z-10">
+      <div class="container px-4 flex justify-between items-center mx-auto">
+        <div class="logo lg:flex-1">
+          <img src="images/myna.svg" alt="Myna" />
+        </div>
+        <ul
+          class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center"
+        >
+          <li><a href="/index.html">
+            <button
+              type="button"
+              class="bg-mynaYellow rounded-full px-8 py-4 text-sm outline-none focus:outline-none"
+            >
+              Back to site
+            </button>
+          </li></a>
+        </ul>
+        <div class="block lg:hidden">
+          <a href="#">
+            <div class="h-1 bg-mynaNoir w-8 mb-2"></div>
+            <div class="h-1 bg-mynaNoir w-8"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sign Up hero -->
+    <section class="bg-black py-16 sm:py-32">
+      <div class="mx-auto w-full px-4 lg:w-9/12 xl:w-7/12">
+        <h1
+          class="text-white md:text-center text-5xl sm:text-heading-2-small font-heading leading-loose"
+        >
+          Pro Edition
+        </h1>
+        <div class="sm:flex sm:justify-between text-mynaYellow w-2/3 md:w-full">
+          <div
+            class="flex items-center justify-between md:justify-start md:my-2"
+          >
+            <p>Delivered to your inbox</p>
+            <img class="h-4 w-4 mx-3" src="images/tick_ylw.svg" alt="tick" />
+          </div>
+          <div
+            class="flex items-center justify-between md:justify-start md:my-2"
+          >
+            <p>Linked to calendar invite</p>
+            <img class="h-4 w-4 mx-3" src="images/tick_ylw.svg" alt="tick" />
+          </div>
+          <div
+            class="flex items-center justify-between md:justify-start md:my-2"
+          >
+            <p>Topic and person search</p>
+            <img class="h-4 w-4 mx-3" src="images/tick_ylw.svg" alt="tick" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stepper Process -->
+    <section class="bg-mynaBgGrey px-3 py-16 md:px-20">
+      <div class="flex items-center mx-auto w-48">
+        <div class="flex items-center relative mx-3">
+          <div class="rounded-full transition duration-500 ease-in-out">
+            <img class="h-12 w-12" src="images/tick_ylw.svg" alt="tick" />
+          </div>
+          <div class="absolute top-0 -ml-10 text-center mt-16 w-32">
+            Your details
+          </div>
+        </div>
+        <div
+          class="flex-auto border-mynaYellow border-t-4 transition duration-500 ease-in-out"
+        ></div>
+        <div class="flex items-center relative mx-3">
+          <div
+            class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 text-center text-mynaLiteGrey leading-tight border-mynaLiteGrey border-4"
+          >
+            2
+          </div>
+          <div class="absolute top-0 -ml-10 text-center mt-16 w-32">
+            Payment
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- changle plan + form -->
+    <section
+      class="bg-mynaBgGrey px-3 lg:px-20 pt-10 pb-24 md:py-8 lg:py-16"
+    >
+      <div class="container flex flex-col md:flex-row">
+
+        <div class="bg-white mx-2 px-8 pt-6 pb-8 md:w-2/5 order-1 md:order-2">
+          <div id="monthly" class="hidden">
+          <div class="flex justify-between">
+            <p>Your plan</p>
+            <p  class="changePlan text-mynaGrey">Change to annual</p>
+          </div>
+          <div class="mt-4">
+            <p class="text-xl">Myna Pro Edition Monthly</p>
+            <p>30 day free trial - active</p>
+            <p class="currency">Then {currency}{monthly}{taxText} user / mo</p>
+            <p class="mt-8 text-xs">Cancel anytime. Find out more</p>
+          </div>
+        </div>
+        <div id="annually" class="hidden">
+          <div class="flex justify-between">
+            <p>Your plan</p>
+            <p class="changePlan text-mynaGrey">Change to monthly</p>
+          </div>
+          <div class="mt-4">
+            <p class="text-xl">Myna Pro Edition Annual</p>
+            <p>30 day free trial - active</p>
+            <p class="currency">Then {currency}{annually}{taxText} user / mo billed annually</p>
+            <p class="mt-8 text-xs">Cancel anytime. Find out more</p>
+          </div>
+        </div>
+          <div class="mt-8 mb-12 border-solid border-t-1 h-px border-mynaYellow"></div>
+          <form class="flex-1">
+            <label class="mt-10 mb-4">Promo code?</label>
+            <div class="flex mt-2 mb-8 sm:mb-0">
+              <input
+                name="promoCode"
+                type="promo"
+                class="appearance-none block w-full text-mynaLiteGrey border border-mynaLiteGrey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                placeholder="Enter promo code"
+              />
+              <!-- <button
+                class="bg-mynaYellow text-white w-16 focus:outline-none"
+                type="submit"
+              >
+                <img src="images/right-arrow.svg" class="mx-auto" />
+              </button> -->
+            </div>
+          </form>
+          <div class="mt-12 mb-12 border-solid border-t-1 h-px border-mynaYellow"></div>
+  
+          <!-- Mobile non active accrodian state  -->
+          <div
+            class="flex flex-row items-center justify-between md:hidden w-full"
+          >
+            <div class="font-medium">Features include:</div>
+            <div class="text-xl text-mynaGrey">+</div>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-medium mb-4">Features include:</p>
+            <div class="flex justify-between my-2">
+              <p>Editable so you can update mis-transcriptions</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>Alternative word search boosts retrieval</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>English, French, Spanish and Brazilian Portuguese</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>Dark mode</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>Myna Recorder</p>
+              <img
+                class="h-full"
+                class="w-100"
+                src="images/tick.svg"
+                alt="tick"
+              />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>Outlook plugin</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+            <div class="flex justify-between my-2">
+              <p>And a whole lot more...</p>
+              <img class="h-full" src="images/tick.svg" alt="tick" />
+            </div>
+          </div>
+        </div>
+  
+        <!-- form -->
+        <div class="bg-white mx-2 px-8 pt-6 pb-8 md:w-3/5 order-2 md:order-1">
+          <form id="paymentDetails" class="rounded">
+            <div class="mb-4">Payment</div>
+            <div class="flex flex-wrap items-center mt-8 mb-4">Number of users*  </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <input
+                  class="appearance-none block w-full text-mynaLiteGrey border border-mynaLiteGrey-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="number"
+                  value="1"
+                  name="quantity"
+                  id="quantity"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-between mt-8 mb-4">Card details* <img class="w-3 h-full" src="images/lock.svg" alt="lock" /></div>
+            <div class="flex flex-wrap -mx-3 mb-2">
+              <div class="w-full px-3">
+                <div class="border rounded border-mynaLiteGrey-200 py-3 px-4 mb-3 ">
+                  <div id="card-element"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center mt-8 mb-4">VAT Number </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <input
+                  class="appearance-none block w-full text-mynaLiteGrey border border-mynaLiteGrey-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="text"
+                  placeholder="GB123456789"
+                  name="vat"
+                  id="vat"
+                />
+              </div>
+            </div>
+              <div class="w-full px-3 pt-20 text-center md:text-left">
+                <button
+                  class="bg-mynaYellow rounded-full px-8 py-4 outline-none focus:outline-none"
+                  type="button"
+                  id="submit"
+                >
+                Complete and buy
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- footer  -->
+<footer class="my-8">
+  <div class="container">
+    <div class="sm:flex sm:justify-between sm:items-center mb-8 lg:mb-16">
+      <img src="images/memorable.svg" alt="Hello memorable" class="mb-8" />
+      <div class="flex flex-wrap sm:flex-no-wrap justify-between md:w-4/5 lg:w-3/5">
+        <div class="w-2/5 mr-4 md:flex-1">
+          <a href="/faqs.html" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">FAQs</a>
+          <a href="https://intelligentvoice.com/" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Intelligent Voice</a>
+          <a href="https://intelligentvoice.com/" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Enterprise Services</a>
+        </div>
+        <div class="w-2/5 mb-4 md:mb-0 md:flex-1 md:mx-4">
+          <a href="https://blog.meetmyna.com" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Blog</a>
+          <a href="/product.html" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Product</a>
+
+        </div>
+        <div class="w-2/5 mr-4 md:flex-1 md:mx-4">
+          <a href="/tscs.html" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Terms of Service</a>
+          <a href="https://support.meetmyna.com/hc/en-us" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Service & Support</a>
+        </div>
+        <div class="w-2/5 md:flex-1 md:ml-4">
+          <a href="/privacy-policy.html" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Privacy Policy</a>
+          <a href="/contact.html" class="block text-xs border-b-1 border-mynaGrey pb-1 mb-4">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap overflow-hidden items-end justify-between">
+      <div class="w-full overflow-hidden md:w-5/12 order-1 md:order-2 lg:ml-12 xl:ml-16">
+        <div class="flex flex-row justify-center w-full">
+          <form class="w-full" action="https://meetmyna.us10.list-manage.com/subscribe/post-json?u=806e3379c85dcf9ddf64471da&amp;id=89165aa0ea&c=?" method="POST" id="mc-embed-form" name="mc-embed-form">
+            <label class="text-xs mb-3">Sign up to our newsletter</label>
+            <div class="flex mt-2 mb-8 sm:mb-0">
+              <input type="email" name="EMAIL" class="text-xs border-mynaGrey border-1 border-r-0 px-4 py-2 w-full focus:outline-none" placeholder="Email address"/><button class="bg-mynaYellow text-white w-10 focus:outline-none" type="submit"><img src="images/right-arrow.svg" class="mx-auto"></button>
+            </div>
+            <div id="mailchimp-errors"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="w-1/2 overflow-hidden md:w-4/12 order-2 md:order-1">
+        
+      </div>
+    
+      <div class="w-1/2 overflow-hidden md:w-2/12 order-3">
+        <div class="flex items-center justify-end">
+          <a href="https://facebook.com/meetmyna" class="mx-2"><img src="images/facebook.svg" alt="Facebook"/></a>
+          <a href="https://twitter.com/meetmyna" class="mx-2"><img src="images/twitter.svg" alt="Twitter"/></a>
+          <a href="https://linkedin.com/company/meetmyna" class="mx-2"><img src="images/linkedin.svg" alt="LinkedIn"/></a>
+          <a href="https://instagram.com/meetmyna" class="ml-2"><img src="images/instagram.svg" alt="Instagram"/></a>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+</footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168995333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-168995333-1');
+</script>
+<script type="text/javascript">
+  _linkedin_partner_id = "2367924";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script><script type="text/javascript">
+  (function(){var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})();
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2367924&fmt=gif" />
+  </noscript>
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '270133237550459');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=270133237550459&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Twitter universal website tag code -->
+<script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init','o42y8');
+  twq('track','PageView');
+  </script>
+  <!-- End Twitter universal website tag code -->
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  <script>
+    $(function() {
+    //vars
+    var backendUrl = config.apiServer
+    var startTrial = true
+    var stripePk = config.stripePK
+    var stripe = Stripe(stripePk, {
+      apiVersion: '2020-03-02',
+    });
+    var elements = stripe.elements();
+    var style = {
+      base: {
+        color: '#32325d',
+        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontSmoothing: 'antialiased',
+        fontSize: '16px',
+        '::placeholder': {
+          color: '#aab7c4'
+        }
+      },
+      invalid: {
+        color: '#fa755a',
+        iconColor: '#fa755a'
+      }
+    };
+
+    var getUrlParameter = function getUrlParameter(sParam) {
+      var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+      for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split('=');
+          if (sParameterName[0] === sParam) {
+              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+          }
+      }
+  };
+
+    // Create an instance of the card Element.
+    var card = elements.create('card', {style: style});
+    
+    // Add an instance of the card Element into the `card-element` <div>.
+      card.mount('#card-element');
+      card.on('change', function(event) {
+        var displayError = document.getElementById('card-errors');
+        if (event.error) {
+          displayError.textContent = event.error.message;
+        } else {
+          displayError.textContent = '';
+        }
+      });
+
+    // Redirect to page 1 if we don't have a user id or business name
+    var businessName = getUrlParameter('businessName');
+    var cognitoUserId = getUrlParameter('userSub');
+    console.log(businessName)
+
+      
+    $("#submit").click(function () {
+      $("#submit").prop('disabled', true).addClass('bg-mynaLightGrey').removeClass('bg-mynaYellow')
+      stripe
+      .createPaymentMethod({
+        type: 'card',
+        card: card,
+      })
+      .then(function(result) {
+        if(result.error) {
+          console.log(result.error)
+          alert('Failed to Create Payment Method')
+          $("#submit").prop('disabled', false).addClass('bg-mynaYellow').removeClass('bg-mynaLightGrey')
+          return;
+        } else {
+          var businessName = getUrlParameter('businessName');
+          var cognitoUserId = getUrlParameter('userSub');
+          var quantity = $( "input[name=quantity]" ).val();
+          var vatNumber = $( "input[name=vat]" ).val();
+          var promoCode = $( "input[name=promoCode]" ).val();
+          $.ajax({
+            url: `${backendUrl}/webhook/signUpForm`,
+            method: `POST`,
+            dataType: 'json',
+            contentType: "application/json",
+            data: JSON.stringify({
+              "cognitoUserId": cognitoUserId,
+              "organisationName": businessName,
+              "paymentMethodId": result.paymentMethod.id,
+              "quantity": quantity,
+              "vatNumber": vatNumber,
+              "paymentFrequency": userPlan,
+              "trial": startTrial,
+              "promoCode": promoCode,
+            })
+          })
+            .done(function( data ) {
+              if ( startTrial === false ) {
+                if (data.latest_invoice.payment_intent.status == 'succeeded') {
+                  paymentSuccess()
+                }
+                if (data.latest_invoice.payment_intent.status == 'requires_action') {
+                  stripe
+                  .confirmCardPayment(data.latest_invoice.payment_intent.client_secret, {
+                    payment_method: {
+                      card: card
+                    },
+                  })
+                  .then(function(result) {
+                    if(result.error) {
+                      console.log(JSON.stringify(result.error))
+                      alert('Error')
+                      $("#submit").prop('disabled', false).addClass('bg-mynaYellow').removeClass('bg-mynaLightGrey')
+                      return
+                    }
+                    if (result.paymentIntent.status === 'succeeded') {
+                      paymentSuccess()
+                    }
+                  });
+                }
+                if (data.latest_invoice.payment_intent.status == 'requires_payment_method') {
+                  alert('Payment Method Declined')
+                  $("#submit").prop('disabled', false).addClass('bg-mynaYellow').removeClass('bg-mynaLightGrey')
+                  return
+                }
+              } else {
+                paymentSuccess()
+              }
+            })
+            .fail(function ( error ) {
+              console.log(JSON.stringify(error))
+              alert(error.responseText)
+              $("#submit").prop('disabled', false).addClass('bg-mynaYellow').removeClass('bg-mynaLightGrey')
+            })
+        }
+      });
+    });
+
+    var paymentSuccess = function () {
+      window.location.href = `signup-3.html`;
+    }
+
+  var userPlan = getUrlParameter('userPlan')
+  function showPlan () {
+    if (userPlan === "monthly") {
+      $("#monthly").removeClass('hidden');
+      $("#annually").addClass('hidden');
+    } else {
+      $("#annually").removeClass('hidden');
+      $("#monthly").addClass('hidden');
+    }
+  }
+
+  $(".changePlan").click(function(event){
+    if (userPlan === "monthly") {
+      userPlan = "annually"
+      showPlan()
+    } else {
+      userPlan = "monthly"
+      showPlan()
+    }
+  })
+
+  showPlan()
+})
+  </script>
+</html>

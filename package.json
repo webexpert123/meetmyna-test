@@ -1,0 +1,39 @@
+{
+  "name": "myna",
+  "version": "1.0.0",
+  "repository": "git@github.com:AmigoPartnership/myna.git",
+  "author": "Jake Knowles <jakeyknowles@hotmail.co.uk>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "tailwindcss": "^1.8.10"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "gulp build",
+    "watch": "gulp"
+  },
+  "engines": {
+    "node": "13.8.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^6.2.1",
+    "gulp-inject": "^5.0.5",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-template": "^5.0.0",
+    "gulp-webserver": "^0.9.1",
+    "install": "^0.13.0",
+    "npm": "^6.14.8"
+  }
+}

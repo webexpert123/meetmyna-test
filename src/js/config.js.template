@@ -1,0 +1,7 @@
+const config = {
+    apiServer: "<%= apiServer %>",
+    appServer: "<%= appServer %>",
+    stripePK: "<%= stripePK %>",
+    cognitoUserPool: "<%= cognitoUserPool %>",
+    cognitoClientId: "<%= cognitoClientId %>",
+}
